@@ -2,10 +2,11 @@ html,
 body {
   width: 100%;
   height: 100%;
-}
-
-body {
   font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+  background: url("../img/bg-pattern.png"), #000;
+  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #000, #000);
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #000, #000);
+  color: white;
 }
 
 a {
@@ -20,10 +21,10 @@ a:hover, a:focus {
 }
 
 hr {
-  max-width: 100px;
-  margin: 25px auto 0;
+  max-width: 250px;
+  margin: 10px auto 0;
   border-width: 1px;
-  border-color: rgba(34, 34, 34, 0.1);
+  border-color: #aaa;
 }
 
 hr.light {
@@ -47,6 +48,12 @@ p {
   margin-bottom: 20px;
 }
 
+ul,
+ol,
+div{
+  font-size: 18px;
+}
+
 section {
   padding: 100px 0;
 }
@@ -56,8 +63,7 @@ section h2 {
 }
 
 #mainNav {
-  border-color: rgba(34, 34, 34, 0.05);
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
@@ -67,31 +73,30 @@ section h2 {
 }
 
 #mainNav .navbar-brand {
-  color: #fdcc52;
+  color: #fff;
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-  color: #fcbd20;
+  color: #980000;
 }
 
 #mainNav .navbar-toggler {
-  font-size: 12px;
+  font-size: 18px;
   padding: 8px 10px;
-  color: #222222;
+  color: #fff;
 }
 
 #mainNav .navbar-nav > li > a {
-  font-size: 11px;
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 #mainNav .navbar-nav > li > a.active {
-  color: #fdcc52 !important;
+  color: #980000 !important;
   background-color: transparent;
 }
 
@@ -101,12 +106,12 @@ section h2 {
 
 #mainNav .navbar-nav > li > a,
 #mainNav .navbar-nav > li > a:focus {
-  color: #222222;
+  color: #fff;
 }
 
 #mainNav .navbar-nav > li > a:hover,
 #mainNav .navbar-nav > li > a:focus:hover {
-  color: #fdcc52;
+  color: #980000;
 }
 
 @media (min-width: 992px) {
@@ -130,17 +135,17 @@ section h2 {
   }
   #mainNav.navbar-shrink {
     border-color: rgba(34, 34, 34, 0.1);
-    background-color: white;
+    background-color: #222;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #222222;
+    color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
     color: #fdcc52;
   }
   #mainNav.navbar-shrink .navbar-nav > li > a,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus {
-    color: #222222;
+    color: #fff;
   }
   #mainNav.navbar-shrink .navbar-nav > li > a:hover,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
@@ -154,9 +159,6 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/bg-pattern.png"), #7b4397;
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #dc2430);
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
   height: 100vh;
   min-height: 775px;
   padding-top: 0;
@@ -274,10 +276,6 @@ section.features .feature-item i {
   font-size: 80px;
   display: block;
   margin-bottom: 15px;
-  background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
-  background: linear-gradient(to left, #7b4397, #dc2430);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 section.contact {
@@ -334,7 +332,7 @@ section.contact ul.list-social li.social-google-plus a:hover {
 footer {
   padding: 25px 0;
   text-align: center;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.4);
   background-color: #222222;
 }
 
@@ -399,14 +397,6 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   direction: RTL;
 }
 
-section.download .section-heading {
-  margin-bottom: 100px;
-}
-
-section.contact .section-heading {
-  margin-bottom: 100px;
-}
-
 a {
   color: #007bff;
 }
@@ -431,7 +421,6 @@ body {
 #mainNav .navbar-nav > li > a {
   font-family: "El Messiri", sans-serif !important;
   letter-spacing: 0 !important;
-  font-size: 15px !important;
 }
 
 h2 {
@@ -448,16 +437,6 @@ h2 {
 
 .h27 {
   height: 27px !important;
-}
-
-header.masthead {
-  background: url(../img/bg-pattern.png), linear-gradient(to left, #888833, #aa8855);
-}
-
-.features {
-  background: #fdcc52;
-  background: -webkit-linear-gradient(#fdcc52, #fdc539);
-  background: linear-gradient(#fdcc52, #fdc539);
 }
 
 .contact p {
