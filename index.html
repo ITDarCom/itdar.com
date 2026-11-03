@@ -172,6 +172,8 @@
     }
     .hero img {
       width: 150px; height: 150px;
+      /* the logo file has empty space around the square (16 of 300 px), so draw the line inside, on the square's edge */
+      outline: 1px solid rgba(255, 255, 255, .12); outline-offset: -8px; border-radius: 20px;
       filter: drop-shadow(0 10px 18px rgba(16, 40, 70, .28));
     }
     .hero h1 { font-size: 38px; margin-top: 22px; }
@@ -251,7 +253,7 @@
     /* desktop */
     @media (min-width: 760px) {
       .hero { padding: 80px 0 88px; }
-      .hero img { width: 180px; height: 180px; }
+      .hero img { width: 180px; height: 180px; outline-offset: -9.6px; border-radius: 24px; }
       .hero h1 { font-size: 48px; }
       .sec { padding: 72px 0; }
       .sec h2 { font-size: 34px; }
