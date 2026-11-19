@@ -257,10 +257,13 @@
       .hero h1 { font-size: 48px; }
       .sec { padding: 72px 0; }
       .sec h2 { font-size: 34px; }
-      .two { grid-template-columns: 1fr 1fr; }
+      .card { padding: 28px; }
+    }
+    /* two cards per row only when two store buttons fit in each card */
+    @media (min-width: 900px) {
+      .two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       /* odd number of cards: put the last one in the middle */
       .two > :last-child:nth-child(odd) { grid-column: 1 / -1; justify-self: center; width: calc(50% - 10px); }
-      .card { padding: 28px; }
     }
     /* small phones: hide the name in the top bar, keep the logo */
     @media (max-width: 480px) {
